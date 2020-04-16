@@ -63,7 +63,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-        // added some \ for it to run in c. amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/'
-	{ run_command, " 🔉 %s | ", {"amixer get Master | tail -1 | sed 's/.*\\[\\([0-9]*%\\)\\].*/\\1/'"} },
+	{ run_command, " | ", {""} },
+	{ run_command, "%s | ", {"~/bin/statusbar/brightness"} },
+	{ run_command, "%s | ", {"~/bin/statusbar/volume"} },
 	{ datetime, "%s",           "%F %T" },
 };
