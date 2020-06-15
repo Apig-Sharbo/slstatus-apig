@@ -66,5 +66,5 @@ static const struct arg args[] = {
 	{ run_command, " | ", {""} },
 	{ run_command, "%s | ", {"~/bin/statusbar/brightness"} },
 	{ run_command, "%s | ", {"~/bin/statusbar/volume"} },
-	{ datetime, "%s",           "%F %T" },
+	{ datetime, "%s",           "%a %d/%m/%Y %r" },
 };
