@@ -63,8 +63,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, " | ", {""} },
-	{ run_command, "%s | ", {"~/bin/statusbar/brightness"} },
-	{ run_command, "%s | ", {"~/bin/statusbar/volume"} },
-	{ datetime, "%s",           "%a %d/%m/%Y %r" },
+	/* { run_command,  " | ",      {""} }, */
+	{ run_command,  "%s | ",    {"~/.local/bin/statusbar/brightness"} },
+	{ run_command,  "%s | ",    {"~/.local/bin/statusbar/volume"} },
+	{ datetime,     "%s",       "%Y %b %d (%a) %r" },
 };
